@@ -4,6 +4,7 @@ const main    = document.querySelector('.content');
 search.addEventListener('keyup', (event) => {
   if (event.key == 'Enter') {
     getListImages(event.target.value);
+    search.value = '';
   }
 })
 
